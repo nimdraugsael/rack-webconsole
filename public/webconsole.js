@@ -74,7 +74,8 @@
 
   $(document).ready(function() {
     $(this).keypress(function(event) {
-      if (event.which == $KEY_CODE) {
+      // if (event.which == $KEY_CODE) {
+      if ((event.which == 17) && event.ctrlKey ) {
         $("#rack-webconsole").slideToggle('fast', function() {
           if ($(this).is(':visible')) {
             $("#rack-webconsole form input").focus();
